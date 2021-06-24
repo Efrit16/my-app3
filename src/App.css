@@ -1,7 +1,29 @@
 .App {
   text-align: center;
+ 
+}
+.wrapperOfAll{
+  height: 90vh;
+  margin: 2rem;
+  display: grid;
+  grid-template-areas:   
+    "nav main add";  
+  grid-template-columns: 1% 1fr 15%;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+ 
 }
 
+.main{
+  
+  grid-area: "main";
+  background-size:500px;
+  background-image: url(1.jpg);
+}
+
+.add{
+  grid-area: "add";
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -14,7 +36,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
